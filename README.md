@@ -1,14 +1,14 @@
-# Portfolio Project 2 – Clusterisation
+# Portfolio Project 2 – Clustering
 
 ## Customers Segmentation
 
 ### General Overview
-The business aim of the project is to divide  customers of an internet shop into similar groups. Such a division  allow us  better address  different promotion strategies. 
+The business aim of the project is to divide  customers of an internet shop into several groups. Such a division  allow us  better address  different promotion strategies. 
 
 Used in the project  raw data contains the goods purchased  by client, their quantity,  unit price and time of transaction.
 
 Such a data organisation need to be transformed into a table where each client is represented by one row. To make it as simple as possible but still business valuable we calculate two parameters: the *Frequency of Purchase* and the *Mean Value of Purchase*.
-After that we perform clusterisation and the business analyse of results. 
+After that we perform clustering and the business analyse of results. 
 
 ### Data Used
 I used the public available data stets available in
@@ -25,13 +25,14 @@ The project contains two notebooks:
 
 1. *Data Preparation* contains all data manipulation using pandas library to aggregate relevant data.
 
-2. *Clustering* preform training machine learning model. Elbow analysis choosing what number of clusters seems to be proper and the business value of results. 
+2. *Clustering* preform the training of the machine learning model. Elbow analysis help to choose what number of clusters seems to be proper and the business value of results. 
 
 ### Algorithm used
 
 1.	K Nearest Neighbours Clustering
 
 ### Summary
+
 The number of 8 clusters seem to be the best. 5 of them seems to be outliers. The sixth is the most common group of small clients but I selected also  two clusters of clients who buy more frequent or have the larger mean invoices. They seems to be most valuable target of marketing campaigns. 
 
 
